@@ -1,0 +1,57 @@
+[
+{
+    "id": 1,
+    "name": "Selena Gomez",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/59/Selena_Gomez_for_Pantene.png"
+    
+  },
+  {
+    "id": 2,
+    "name": "Christiano Ronaldo",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg"
+    
+  },
+  {
+    "id": 3,
+    "name": "Kylie Jenner",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/43/Kylie_Jenner2_%28cropped%29.png"
+    
+  },
+  {
+    "id": 4,
+    "name": "Leo Messi",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Lionel_Messi_20180626.jpg"
+    
+  },
+  {
+    "id": 5,
+    "name": "Ariana Grande",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Ariana_Grande_%2832426962484%29_%28cropped%29.jpg/800px-Ariana_Grande_%2832426962484%29_%28cropped%29.jpg"
+    
+  },
+  {
+    "id": 6,
+    "name": "Billi Eilish",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Billie_Eilish_2019_by_Glenn_Francis.jpg/800px-Billie_Eilish_2019_by_Glenn_Francis.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Beyonce",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Beyonce_-_The_Formation_World_Tour%2C_at_Wembley_Stadium_in_London%2C_England.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Justin Bieber",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/da/Justin_Bieber_in_2015.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Kendall Jenner",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Kendall_Jenner_Cannes_2017.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Rihanna",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Rihanna_Fenty_2018.png"
+  }
+]
