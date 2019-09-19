@@ -53,5 +53,15 @@
     "id": 10,
     "name": "Rihanna",
     "image": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Rihanna_Fenty_2018.png"
+  },
+  {
+    "id": 11,
+    "name": "Dwayne Johnson",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Dwayne_Johnson_2%2C_2013.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Will Ferrell",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Will_Ferrell_2013.jpg/800px-Will_Ferrell_2013.jpg"
   }
 ]
