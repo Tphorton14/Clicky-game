@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import RandomImage from "./components/randomImages";
 import Title from "./components/Title";
+import Score from "./components/score";
 import Wrapper from "./components/wrapper";
 import random from "./randomImages.json";
 
@@ -61,13 +62,14 @@ class App extends Component {
   render() {
     // const shuffleImages = shuffleImages(this.props.id);
     return (
+    
       <Wrapper>
-       
+        
+        <Title className="header">Title Here 
         <Score total={this.state.score}
-               goal={8}
+               goal={12}
                status={this.state.status}
-               />
-        <Title className="header">Title Here </Title>
+               /></Title>
 
         {this.state.random.map(random => (
           <RandomImage
@@ -78,10 +80,11 @@ class App extends Component {
             name={random.name}
             image={random.image}
           />
+          
         ))}
-
-        </div>
-      </Wrapper>
+</Wrapper>
+      
+      
       
       
     );
