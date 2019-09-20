@@ -65,12 +65,12 @@ class App extends Component {
     
       <Wrapper>
         
-        <Title className="header">Title Here 
+        <Title className="header">Player Score: 
         <Score total={this.state.score}
                goal={12}
                status={this.state.status}
                /></Title>
-
+        
         {this.state.random.map(random => (
           <RandomImage
             shuffleImages={this.shuffleImages}

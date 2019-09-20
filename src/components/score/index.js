@@ -5,10 +5,10 @@ function Score(props) {
     
 
    return <div className="gameScore">
-     <div>
-    <h3 className="score"> {props.total}</h3>
-    </div>
-    <h3 className="status">{props.status}</h3>
+     
+    <p className="playerScore"> {props.total}</p>
+    
+    <p className="playersStatus">{props.status}</p>
     </div>
   
 }
