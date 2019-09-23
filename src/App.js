@@ -62,7 +62,7 @@ class App extends Component {
             status={this.state.status}/>
         </Title>
         </header>
-        <hr/>
+       
         
         {this.state.random.map(random => (
           <RandomImage
