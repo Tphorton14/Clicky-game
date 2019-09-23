@@ -41,7 +41,8 @@ class App extends Component {
   };
   // create onClick function
   removeRandom = id => {
-    const random = this.state.random.filter(random => random.id !== id);
+    const random = this.state.random.filter(random => 
+    random.id !== id);
 
     this.setState({ random })
   }
