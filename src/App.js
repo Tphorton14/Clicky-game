@@ -4,6 +4,7 @@ import Title from "./components/Title";
 import Score from "./components/score";
 import Wrapper from "./components/wrapper";
 import random from "./randomImages.json";
+import './App.css'
 
 
 
@@ -44,18 +45,22 @@ class App extends Component {
   render() {
     // const shuffleImages = shuffleImages(this.props.id);
     return (
-    
-      <Wrapper>
-        <nav class="navbar navbar-light bg-light">
+   <div>
+     <nav class="navbar navbar-light bg-light">
           <span class="navbar-brand mb-0 h1">Navbar</span>
         </nav>
+      <Wrapper>
         
+        
+        <header>
         <Title className="header">
           Player Score: 
           <Score total={this.state.score}
             goal={12}
             status={this.state.status}/>
         </Title>
+        </header>
+        <hr/>
         
         {this.state.random.map(random => (
           <RandomImage
@@ -69,7 +74,7 @@ class App extends Component {
           
         ))}
 </Wrapper>
-      
+      </div> 
       
       
       
