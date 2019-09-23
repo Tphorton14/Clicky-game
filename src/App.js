@@ -39,38 +39,23 @@ class App extends Component {
       }
     }
   };
-  // create onClick function
-  // removeRandom = id => {
-  //   const random = this.state.random.filter(random => 
-  //   random.id !== id);
-
-  //   this.setState({ random })
-  // }
-
-  // componentDidMount() {
-  //   this.loadApp();
-  // }
-
-
-  // removeRandom = id => {
-  //   const random = this.state.random.filter(random => random.id !== id);
-
-  //   this.setState({ random })
-  // }
-
-  // reset when a photo is clicked twice
+ 
 
   render() {
     // const shuffleImages = shuffleImages(this.props.id);
     return (
     
       <Wrapper>
+        <nav class="navbar navbar-light bg-light">
+          <span class="navbar-brand mb-0 h1">Navbar</span>
+        </nav>
         
-        <Title className="header">Player Score: 
-        <Score total={this.state.score}
-               goal={12}
-               status={this.state.status}
-               /></Title>
+        <Title className="header">
+          Player Score: 
+          <Score total={this.state.score}
+            goal={12}
+            status={this.state.status}/>
+        </Title>
         
         {this.state.random.map(random => (
           <RandomImage
