@@ -46,9 +46,11 @@ class App extends Component {
     // const shuffleImages = shuffleImages(this.props.id);
     return (
    <div>
-     <nav className="back" class="navbar navbar-light bg-light text-center">
-          <span class="navbar-brand mb-0 h1">Clicky-Game</span>
+     <div className="back">
+     <nav  class="navbars text-center">
+          <span className="titles">Clicky-Game</span>
         </nav>
+        </div>
       <Wrapper>
         
         
