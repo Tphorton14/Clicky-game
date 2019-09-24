@@ -20,8 +20,23 @@ class App extends Component {
   };
 
   // // randomize photos when one is clicked
+  // helper function to "shuffle all objects"
   shuffleImages = id => {
+    let random = [...this.state.random]
+
+      
+      for (let i = random.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1));
+        [random[i], random[j]] = [random[j], random[i]];
+      }
+    return random;
+  };
+
+  // needs to know specific card being clicked for condiction to know what runs.. true or false if items is changed
+  // "isclicked"
+  isClicked = id => {
     let clickedImage = this.state.clickedImage;
+    console.log(id);
 
     if (clickedImage.includes(id)) {
       this.setState({ clickedImage: [], score: 0, status: "LOSER! Click a photo to replay game!" });
@@ -29,16 +44,16 @@ class App extends Component {
     } else {
       // copies array of clicked image, adds an id
       let clickedImage = [...this.state.clickedImage, id]
+      let random = this.shuffleImages();
+
+      this.setState({ random, clickedImage, score: clickedImage.length, status: "" });
+      
 
       if (clickedImage.length === 12) {
         this.setState({ clickedImage: [], score: 12, status: "Congrats.... WINNER!" })
         return
       }
-      this.setState({ random, clickedImage, score: clickedImage.length, status: "" });
-      for (let i = random.length - 1; i > 0; i--) {
-        let j = Math.floor(Math.random() * (i + 1));
-        [random[i], random[j]] = [random[j], random[i]];
-      }
+      // can break up "win" and "loss" into different functions
     }
   };
  
@@ -67,7 +82,7 @@ class App extends Component {
         
         {this.state.random.map(random => (
           <RandomImage
-            shuffleImages={this.shuffleImages}
+          isClicked={this.isClicked}
 
             id={random.id}
             key={random.id}
@@ -83,8 +98,9 @@ class App extends Component {
       
     );
   }
-
 }
+
+
 
 
 
