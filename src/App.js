@@ -27,7 +27,8 @@ class App extends Component {
       this.setState({ clickedImage: [], score: 0, status: "LOSER! Click a photo to replay game!" });
       return;
     } else {
-      clickedImage.push(id)
+      // copies array of clicked image, adds an id
+      let clickedImage = [...this.state.clickedImage, id]
 
       if (clickedImage.length === 12) {
         this.setState({ clickedImage: [], score: 12, status: "Congrats.... WINNER!" })
