@@ -24,7 +24,7 @@ class App extends Component {
     let clickedImage = this.state.clickedImage;
 
     if (clickedImage.includes(id)) {
-      this.setState({ clickedImage: [], score: 0, status: "LOSER! Click to replay game!" });
+      this.setState({ clickedImage: [], score: 0, status: "LOSER! Click a photo to replay game!" });
       return;
     } else {
       clickedImage.push(id)
