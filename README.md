@@ -10,4 +10,6 @@ Every time an image is clicked, the images rendered to the page shuffles themsel
 
 Once the user's score is reset after an incorrect guess, the game will restart.
 
+# Demo
+
 ![Demo of Game](https://github.com/Tphorton14/Clicky-game/blob/master/video/clicky_game.gif)
