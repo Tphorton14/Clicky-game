@@ -9,3 +9,5 @@ The application keeps track of the user's score. The user's score will be increm
 Every time an image is clicked, the images rendered to the page shuffles themselves in a random order.
 
 Once the user's score is reset after an incorrect guess, the game will restart.
+
+![Image of Yaktocat](https://github.com/Tphorton14/Clicky-game/blob/master/video/Clicky_Game.mkv)
